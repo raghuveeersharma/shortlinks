@@ -10,7 +10,7 @@ export default function Home() {
           <p className="md:text-4xl text-lg font-bold">The URL Shortner</p>
           <p className="font-mono md:px-36 md:text-base text-xs px-5">
             Tool you need to shorten your links. You can use this tool to
-            shorten your links for free and with out sighin etc !!
+            shorten your links for free and with-out signing etc !!
           </p>
           <div className="flex gap-4 items-center mt-3 ">
             <Link
