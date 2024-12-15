@@ -16,12 +16,12 @@ const Navbar = () => {
   return (
     <nav>
       <div className="w-full bg-slate-800 p-4 flex justify-between items-center text-white relative">
-        <div className="text-xl font-semibold flex items-center relative hover:scale-105">
+        <div className="md:text-xl text-lg font-semibold flex items-center relative hover:scale-105">
           <div>
-            <span className="text-3xl ">Short</span>
+            <span className="md:text-3xl text-2xl ">Short</span>
             <span className="text-sky-400">Links</span>
           </div>
-          <span className="absolute -right-5 top-3">
+          <span className="absolute -right-5 md:top-3 top-2">
             <PiLinkSimple />
           </span>
         </div>
@@ -51,12 +51,15 @@ const Navbar = () => {
           <Link href="/contact">
             <li className="hover:text-sky-400 cursor-pointer">Contact</li>
           </Link>
-          <Link href="/contact">
+          <Link href="/shorten">
             <button className="hover:text-sky-400 cursor-pointer bg-slate-300 p-1 rounded-md px-2 font-bold hover:scale-105">
               Try Now
             </button>
           </Link>
-          <Link href="/contact">
+          <Link
+            href="https://github.com/raghuveeersharma/shortlinks"
+            target="_blank"
+          >
             <button className="cursor-pointer rounded-md font-bold hover:scale-105 text-4xl relative">
               <FaGithubSquare />
               <span className="text-xs absolute right-0 font-normal">
@@ -82,7 +85,7 @@ const Navbar = () => {
             <Link href="/contact">
               <li className="hover:text-sky-400 cursor-pointer">Contact</li>
             </Link>
-            <Link href="/">
+            <Link href="/shorten">
               <button className="hover:text-sky-400 cursor-pointer bg-slate-300 p-1 rounded-md px-2 font-bold hover:scale-105 mr-4">
                 Try Now
               </button>
