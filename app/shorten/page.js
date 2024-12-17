@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const shorten = () => {
@@ -64,7 +65,18 @@ const shorten = () => {
           Generate
         </button>
       </div>
-      {generatedUrl && <code>{generatedUrl}</code>}
+      {generatedUrl && (
+        <>
+          {" "}
+          <span className="font-bold text-lg">Your Link </span>
+          <br />
+          <code>
+            <Link target="_blank" href={generatedUrl}>
+              {generatedUrl}
+            </Link>
+          </code>
+        </>
+      )}
     </div>
   );
 };
